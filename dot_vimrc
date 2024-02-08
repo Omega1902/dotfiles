@@ -1,0 +1,15 @@
+" Syntax highlight
+syntax enable
+
+" tags are 4 spaces
+set expandtab
+set tabstop=4
+
+" set relative line numbers & absolute line number for current line
+set relativenumber
+set number
+
+" Search as soon as characters are entered
+set incsearch
+" Highlight search results
+set hlsearch

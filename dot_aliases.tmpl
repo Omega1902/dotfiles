@@ -1,0 +1,21 @@
+alias la='ls -A'
+alias ll='ls -l'
+alias l='ls -lA'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ~='cd ~'
+alias pi='ssh pi@ {{- .pi_ip -}}'
+alias virenscan='clamscan -r --bell -i'
+alias winos='sudo mount /dev/sda2 /media/winos'
+alias skyrimProcess='ps -axo pid,cmd | grep TESV | grep .exe'
+alias b='echo -e "enter brightness:\n"; read val; xrandr  --output eDP --brightness "${val}"'
+alias ncdu='ncdu --show-itemcount'
+alias rip='rip -F'
+alias cleanWinFiles='find . -type f \( -iname "desktop.ini" -o -iname "thumbs.db" \) -exec rm {} \;'
+
+#searchZips(){
+#for f in *.zip;
+#do
+#unzip -l $f | grep $1 && echo $f;
+#done
+#}
