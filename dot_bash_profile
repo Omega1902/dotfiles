@@ -4,4 +4,6 @@
 
 #[[ -f ~/.bashrc ]] && . ~/.bashrc
 
+export EDITOR=vim
+
 [[ -f ~/.aliases ]] && . ~/.aliases
