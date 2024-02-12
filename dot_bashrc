@@ -137,4 +137,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-[[ -f ~/.bash_profile ]] && . ~/.bash_profile
+
+[[ -f ~/.aliases ]] && . ~/.aliases
