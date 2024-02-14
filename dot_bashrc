@@ -138,4 +138,5 @@ ex ()
   fi
 }
 
+[[ -f ~/.cargo/env ]] && . ~/.cargo/env # Rust/Cargo env
 [[ -f ~/.aliases ]] && . ~/.aliases
