@@ -11,7 +11,8 @@
 [push]
     autoSetupRemote = true
 [alias]
-    amend = commit --amend --no-edit
-    ls = log --graph --pretty=full --all --show-signature
+    amend = commit --amend --no-edit --date "now"
+    ac = commit -am
+    ls = log --graph --pretty=fuller --all --show-signature
     l = log --graph --pretty=format:\"%C(auto)%h%<(3)%d %s %C(bold blue)(%cr, %an)%Creset\" --abbrev-commit --all
     ll = log --graph --pretty=format:\"%C(auto)%h%<(3)%d %s %C(bold blue)(%cr, %an)%Creset%n\" --abbrev-commit --all --find-copies -M --stat
