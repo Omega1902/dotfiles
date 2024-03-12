@@ -115,7 +115,7 @@ if ${use_color} ; then
 	if [[ -f ~/.git-prompt.sh ]] ; then
 		source ~/.git-prompt.sh
 
-		PROMPT_BEFORE="$color_main[\h$color_path \W$color_main]$txtrst";
+		PROMPT_BEFORE="$color_main[\u@\h$color_path \W$color_main]$txtrst";
 		PROMPT_AFTER="$color_main\$ $txtrst";
 		PROMPT_COMMAND='__git_ps1 "$PROMPT_BEFORE" "$PROMPT_AFTER"'
 		export GIT_PS1_SHOWDIRTYSTATE='true' # shows dirty state with * (red, unstaged) or + (green, staged)
@@ -188,3 +188,6 @@ ex ()
 
 [[ -f ~/.cargo/env ]] && . ~/.cargo/env # Rust/Cargo env
 [[ -f ~/.aliases ]] && . ~/.aliases
+
+# maps zoxide to cd, source: https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init --cmd cd bash)"
