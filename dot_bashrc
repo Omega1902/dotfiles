@@ -188,6 +188,8 @@ ex ()
 
 [[ -f ~/.cargo/env ]] && . ~/.cargo/env # Rust/Cargo env
 [[ -f ~/.aliases ]] && . ~/.aliases
+[[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
+
 
 # maps zoxide to cd, source: https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init --cmd cd bash)"

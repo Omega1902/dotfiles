@@ -1,13 +1,15 @@
 [user]
     name = {{ .name }}
     email = {{ .email }}
+{{ if ne .signingkey "" }}
     signingkey = {{ .signingkey }}
+[commit]
+    gpgsign = true
+{{ end }}
 [pull]
     rebase = false
 [init]
     defaultBranch = main
-[commit]
-    gpgsign = true
 [push]
     autoSetupRemote = true
 [alias]
