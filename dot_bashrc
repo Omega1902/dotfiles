@@ -191,5 +191,11 @@ ex ()
 [[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
 
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # maps zoxide to cd, source: https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init --cmd cd bash)"
+
+# vim: set ft=sh:
